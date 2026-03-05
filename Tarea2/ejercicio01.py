@@ -3,3 +3,6 @@
 #INICIO 
 for i in range(1, 11):
     print(i)
+
+#Manuel Oswaldo Trabanino Barreda 000175364
+#04/03/2026
