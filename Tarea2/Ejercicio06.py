@@ -9,3 +9,5 @@ for letra in palabra:
     if letra in vocales:
         contador_vocales += 1
 print(f"La palabra '{palabra}' tiene {contador_vocales} vocales.")
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026

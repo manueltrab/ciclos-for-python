@@ -9,3 +9,5 @@ for i in range(num_articulos):
     precio = float(input(f"Ingrese el precio del articulo {i + 1}: "))
     total += precio
 print(f"El total a pagar es: {total}")
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026

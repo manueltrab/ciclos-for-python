@@ -5,3 +5,5 @@
 numero = int(input("Ingrese un numero entero: "))
 for i in range(1, numero + 1):
     print("*" * i)
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026

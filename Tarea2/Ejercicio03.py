@@ -3,3 +3,5 @@
 #inicio
 for i in range(2, 21, 2):
     print(i)
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026

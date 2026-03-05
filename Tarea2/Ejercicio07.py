@@ -8,3 +8,5 @@ for i in range(5):
     notas.append(nota)
 promedio = sum(notas) / len(notas)
 print(f"El promedio de las notas es: {promedio}")
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026

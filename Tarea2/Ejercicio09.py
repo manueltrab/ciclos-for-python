@@ -24,3 +24,5 @@ for numero in numeros:
 print(f"Numeros positivos: {positivos}")
 print(f"Numeros negativos: {negativos}")
 print(f"Numeros ceros: {ceros}")
+#Manuel Oswaldo Trabanino Barreda
+#04/03/2026
