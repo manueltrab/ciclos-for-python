@@ -1,10 +1,28 @@
-#seudocodigo
-#import reques
-#consumir url https://pokeapi.co/api/v2/pokemon?limit=20
-#validar con if si la peticion fue exitosa (200)
-#Lógica y Condicional: Dentro del ciclo, para cada pokemón, deberás imprimir su nombre. Sin embargo, hay una regla especial:
-#Si el nombre del pokemón comienza con la letra 'b' (mayúscula o minúscula), debes imprimir: [ESPECIAL] NombreDelPokemon.
-#De lo contrario, simplemente imprime: Nombre: NombreDelPokemon.
+import requests
 
+# Consumir la URL con el límite de 20
+url = "https://pokeapi.co/api/v2/pokemon?limit=20"
+
+try:
+    respuesta = requests.get(url)
+
+    # Validar si la petición fue exitosa (status 200)
+    if respuesta.status_code == 200:
+        datos = respuesta.json()
+        lista_pokemon = datos['results']
+
+        for pokemon in lista_pokemon:
+            nombre = pokemon['name']
+            
+            # Lógica y condicional para la letra 'b'
+            if nombre.lower().startswith('b'):
+                print(f"[ESPECIAL] {nombre}")
+            else:
+                print(f"Nombre: {nombre}")
+    else:
+        print(f"Error: Código de estado {respuesta.status_code}")
+
+except Exception as e:
+    print(f"Ocurrió un error en la conexión: {e}")
 
 
